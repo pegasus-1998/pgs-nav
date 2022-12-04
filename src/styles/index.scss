@@ -1,0 +1,56 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background: #f2f2f2;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+.bx-width {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear-float {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+.none-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
