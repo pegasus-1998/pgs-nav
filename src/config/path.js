@@ -12,7 +12,7 @@ export default [
                 iconPath: require('@/assets/icon/gitee.png'),
                 name: '码云',
                 url: 'https://gitee.com',
-                introduction: '帮助开发者/团队/企业更好地管理代码'
+                introduction: '国内代码管理'
             },
             {
                 iconPath: require('@/assets/icon/W3School.png'),
@@ -54,7 +54,7 @@ export default [
                 iconPath: require('@/assets/icon/sf.png'),
                 name: '思否',
                 url: 'https://segmentfault.com',
-                introduction: '开发者社区 技术新闻资讯 技术问答社区 技术博客专栏'
+                introduction: '开发者社区 技术新闻资讯'
             },
             {
                 iconPath: require('@/assets/icon/jiansu.png'),
@@ -107,13 +107,13 @@ export default [
                 iconPath: require('@/assets/icon/xdjs.png'),
                 name: '现代JavaScript教程',
                 url: 'https://zh.javascript.info/',
-                introduction: '基础到高阶的 JavaScript 相关知识'
+                introduction: '基础到高阶的JavaScript相关知识'
             },
             {
                 iconPath: require('@/assets/icon/es6.png'),
                 name: 'ES6 入门教程',
                 url: 'https://es6.ruanyifeng.com/',
-                introduction: 'ECMAScript 6 新引入的语法特性。'
+                introduction: 'ECMAScript6新语法特性。'
             },
             {
                 iconPath: require('@/assets/icon/axios.png'),
@@ -171,13 +171,13 @@ export default [
                 iconPath: require('@/assets/icon/jqcj.png'),
                 name: 'jQuery插件库',
                 url: 'https://www.jq22.com',
-                introduction: 'jQuery插件库-收集最全最新最好的jQuery插件'
+                introduction: '收集最全最新最好的jQuery插件'
             },
             {
                 iconPath: require('@/assets/icon/jqhome.png'),
                 name: 'jQuery之家',
                 url: 'http://www.htmleaf.com',
-                introduction: '自由分享jQuery、html5、css3的插件库'
+                introduction: '自由分享jQuery的插件库'
             },
         ]
     },
@@ -189,6 +189,203 @@ export default [
                 name: 'Vue',
                 url: 'https://cn.vuejs.org',
                 introduction: '渐进式JavaScript 框架'
+            },
+            {
+                iconPath: require('@/assets/icon/Vue.png'),
+                name: 'Vue Router',
+                url: 'https://router.vuejs.org/zh',
+                introduction: 'Vue.js 的官方路由'
+            },
+            {
+                iconPath: require('@/assets/icon/Vue.png'),
+                name: 'Vuex',
+                url: 'https://vuex.vuejs.org/zh',
+                introduction: 'Vue的集中式存储'
+            },
+            {
+                iconPath: require('@/assets/icon/Vue.png'),
+                name: 'Vue CLI',
+                url: 'https://cli.vuejs.org/zh',
+                introduction: 'Vue.js 开发的标准工具'
+            },
+            {
+                iconPath: require('@/assets/icon/pinia.png'),
+                name: 'Pinia',
+                url: 'https://pinia.vuejs.org/zh/',
+                introduction: 'Vue 的专属状态管理库'
+            },
+            {
+                iconPath: require('@/assets/icon/vue3cn.png'),
+                name: 'Vue3',
+                url: 'https://vue3js.cn/',
+                introduction: '非官方站点 Vue爱好者共同搭建'
+            },
+            {
+                iconPath: require('@/assets/icon/nuxt.png'),
+                name: 'Nuxt.js',
+                url: 'https://www.nuxtjs.cn/',
+                introduction: 'Vue的服务端渲染'
+            },
+        ]
+    },
+    {
+        title: 'React',
+        children: [
+            {
+                iconPath: require('@/assets/icon/react.png'),
+                name: 'React',
+                url: 'https://react.docschina.org/',
+                introduction: 'React 官方中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/react.png'),
+                name: 'React Native',
+                url: 'https://reactnative.cn/',
+                introduction: 'React Native 中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/next.png'),
+                name: 'Next.js',
+                url: 'https://www.nextjs.cn/',
+                introduction: '服务器渲染的React应用程序'
+            },
+            {
+                iconPath: require('@/assets/icon/redux.png'),
+                name: 'Redux',
+                url: 'https://cn.redux.js.org/',
+                introduction: 'Redux 中文官网'
+            },
+        ]
+    },
+    {
+        title: 'Angular',
+        children: [
+            {
+                iconPath: require('@/assets/icon/Angular.png'),
+                name: 'Angular',
+                url: 'https://angular.cn/',
+                introduction: 'Angular'
+            }, 
+        ]
+    },
+    {
+        title: 'Node.js',
+        children: [
+            {
+                iconPath: require('@/assets/icon/node.png'),
+                name: 'Node.js',
+                url: 'http://nodejs.cn/',
+                introduction: 'Node.js 中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/node.png'),
+                name: 'Node.js学习指南',
+                url: 'https://blog.poetries.top/node-learning-notes/notes/base/01-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html',
+                introduction: '认识Node.js'
+            },
+            {
+                iconPath: require('@/assets/icon/node.png'),
+                name: 'Nodejs技术栈',
+                url: 'https://www.nodejs.red/#/',
+                introduction: 'Nodejs技术栈'
+            }, 
+        ]
+    },
+    {
+        title: 'TypeScript',
+        children: [
+            {
+                iconPath: require('@/assets/icon/ts.png'),
+                name: 'TypeScript',
+                url: 'https://ts.xcatliu.com/',
+                introduction: 'TypeScript入门教程'
+            },
+            {
+                iconPath: require('@/assets/icon/ts.png'),
+                name: 'TypeScript',
+                url: 'https://www.tslang.cn/',
+                introduction: 'TypeScript中文网'
+            }
+        ]
+    },
+    {
+        title: '编辑器',
+        children: [
+            {
+                iconPath: require('@/assets/icon/vscode.png'),
+                name: 'VScode',
+                url: 'https://code.visualstudio.com/',
+                introduction: '前端开发强烈推荐'
+            },
+            {
+                iconPath: require('@/assets/icon/ws.png'),
+                name: 'WebStorm',
+                url: 'https://www.jetbrains.com/zh-cn/webstorm/',
+                introduction: '最智能的 JavaScript IDE'
+            },
+            {
+                iconPath: require('@/assets/icon/hx.png'),
+                name: 'HBuilderX',
+                url: 'https://www.dcloud.io/hbuilderx.html',
+                introduction: '跨端编辑器'
+            },
+        ]
+    },
+    {
+        title: 'Git',
+        children: [
+            {
+                iconPath: require('@/assets/icon/kyzb.png'),
+                name: '开源指北',
+                url: 'https://oschina.gitee.io/opensource-guide/git_tutorial/',
+                introduction: '简单易懂的 Git 入门指导教程'
+            },
+            {
+                iconPath: require('@/assets/icon/git.png'),
+                name: 'Git 参考手册',
+                url: 'http://gitref.justjavac.com/',
+                introduction: '日常使用常用的命令'
+            },
+        ]
+    },
+    {
+        title: '组件库',
+        children: [
+            {
+                iconPath: require('@/assets/icon/element.png'),
+                name: 'Element',
+                url: 'https://element.eleme.cn/#/zh-CN',
+                introduction: '基于 Vue 的桌面端组件库'
+            },
+            {
+                iconPath: require('@/assets/icon/vant.jpg'),
+                name: 'Vant',
+                url: 'https://vant-contrib.gitee.io/vant/#/zh-CN/',
+                introduction: '轻量、可靠的移动端 Vue 组件库'
+            },
+            {
+                iconPath: require('@/assets/icon/antd.png'),
+                name: 'AntD',
+                url: 'https://ant.design/docs/react/introduce-cn',
+                introduction: 'React UI 组件库'
+            },
+            {
+                iconPath: require('@/assets/icon/naive.jpg'),
+                name: 'Naive UI',
+                url: 'https://www.naiveui.com/zh-CN/os-theme',
+                introduction: '一个 Vue 3 组件库'
+            },
+            {
+                iconPath: require('@/assets/icon/nutui.jpg'),
+                name: 'NutUI',
+                url: 'https://nutui.jd.com/#/',
+                introduction: '京东风格的移动端 Vue 组件库'
+            },
+            {
+                iconPath: require('@/assets/icon/uView.png'),
+                name: 'uView',
+                url: 'https://www.uviewui.com/',
+                introduction: 'uni-app UI框架'
             },
         ]
     }
