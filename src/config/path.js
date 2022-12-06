@@ -98,6 +98,18 @@ export default [
                 url: 'http://www.manongjc.com',
                 introduction: 'IT编程入门网 - 码农网'
             },
+            {
+                iconPath: require('@/assets/icon/yjzw.png'),
+                name: '印记中文',
+                url: 'https://docschina.org/',
+                introduction: '为前端开发人员提供优质文档！'
+            },
+            {
+                iconPath: require('@/assets/icon/OSCHINA.png'),
+                name: 'OSCHINA',
+                url: 'https://www.oschina.net/',
+                introduction: '中文开源技术交流社区'
+            },
         ]
     },
     {
@@ -329,6 +341,12 @@ export default [
                 url: 'https://www.dcloud.io/hbuilderx.html',
                 introduction: '跨端编辑器'
             },
+            {
+                iconPath: require('@/assets/icon/sb.jpg'),
+                name: 'Sublime text',
+                url: 'http://www.sublimetext.com/',
+                introduction: '轻量 快速启动'
+            },
         ]
     },
     {
@@ -386,6 +404,87 @@ export default [
                 name: 'uView',
                 url: 'https://www.uviewui.com/',
                 introduction: 'uni-app UI框架'
+            },
+            {
+                iconPath: require('@/assets/icon/mui.png'),
+                name: 'MATERIAL-UI',
+                url: 'https://v4.mui.com/zh/',
+                introduction: 'React UI 框架'
+            },
+            {
+                iconPath: require('@/assets/icon/iView.png'),
+                name: 'iView',
+                url: 'https://www.iviewui.com/',
+                introduction: '基于 Vue.js 3 的 UI 组件库'
+            },
+            {
+                iconPath: require('@/assets/icon/Vuetify.png'),
+                name: 'Vuetify',
+                url: 'https://vuetifyjs.com/zh-Hans/',
+                introduction: 'Vue UI 组件库'
+            },
+        ]
+    },
+    {
+        title: '字体图标',
+        children: [
+            {
+                iconPath: require('@/assets/icon/iconfont.png'),
+                name: 'iconfont',
+                url: 'https://www.iconfont.cn/',
+                introduction: '阿里巴巴矢量图标库'
+            },
+            {
+                iconPath: require('@/assets/icon/fontA.png'),
+                name: 'Font Awesome',
+                url: 'https://fontawesome.com.cn/',
+                introduction: 'Font Awesome中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/park.png'),
+                name: 'iconpark',
+                url: 'https://iconpark.oceanengine.com/home',
+                introduction: '2600+基础图标'
+            },
+            {
+                iconPath: require('@/assets/icon/ziti.png'),
+                name: '字体天下',
+                url: 'https://www.fonts.net.cn/',
+                introduction: '提供各类字体免费下载'
+            },
+            {
+                iconPath: require('@/assets/icon/emoji.png'),
+                name: 'emojiall',
+                url: 'https://www.emojiall.com/zh-hans',
+                introduction: 'emojiall表情符号大全'
+            },
+            {
+                iconPath: require('@/assets/icon/bootstrap.png'),
+                name: 'Bootstrap 官方图标库',
+                url: 'https://icons.bootcss.com/',
+                introduction: '包含 1800 多个图标'
+            },
+        ]
+    },
+    {
+        title: '跨平台',
+        children: [
+            {
+                iconPath: require('@/assets/icon/uni.png'),
+                name: 'uni-app',
+                url: 'https://uniapp.dcloud.net.cn/',
+                introduction: '使用Vue开发所有前端应用的框架'
+            },
+        ]
+    },
+    {
+        title: '构建',
+        children: [
+            {
+                iconPath: require('@/assets/icon/webpack.png'),
+                name: 'webpack',
+                url: 'https://www.webpackjs.com/',
+                introduction: 'webpack中文网'
             },
         ]
     }
