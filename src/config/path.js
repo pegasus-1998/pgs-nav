@@ -277,7 +277,7 @@ export default [
                 name: 'Angular',
                 url: 'https://angular.cn/',
                 introduction: 'Angular'
-            }, 
+            },
         ]
     },
     {
@@ -300,7 +300,7 @@ export default [
                 name: 'Nodejs技术栈',
                 url: 'https://www.nodejs.red/#/',
                 introduction: 'Nodejs技术栈'
-            }, 
+            },
         ]
     },
     {
@@ -475,6 +475,12 @@ export default [
                 url: 'https://uniapp.dcloud.net.cn/',
                 introduction: '使用Vue开发所有前端应用的框架'
             },
+            {
+                iconPath: require('@/assets/icon/weixin.png'),
+                name: '微信小程序',
+                url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/',
+                introduction: '微信开放文档'
+            },
         ]
     },
     {
@@ -485,6 +491,166 @@ export default [
                 name: 'webpack',
                 url: 'https://www.webpackjs.com/',
                 introduction: 'webpack中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/vite.png'),
+                name: 'Vite',
+                url: 'https://vitejs.cn/',
+                introduction: 'Vite中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/rollup.png'),
+                name: 'rollupjs',
+                url: 'https://www.rollupjs.com/',
+                introduction: 'rollup.js中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/Babel.png'),
+                name: 'Babel',
+                url: 'https://www.babeljs.cn/',
+                introduction: 'Babel中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/npm.png'),
+                name: 'npm',
+                url: 'https://www.npmjs.com.cn/',
+                introduction: 'npm 中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/jest.png'),
+                name: 'Jest',
+                url: 'https://www.jestjs.cn/',
+                introduction: 'Jest 中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/gulp.png'),
+                name: 'gulp.js',
+                url: 'https://www.gulpjs.com.cn/',
+                introduction: 'gulp.js中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/postcss.png'),
+                name: 'PostCSS',
+                url: 'https://www.postcss.com.cn/',
+                introduction: 'PostCSS中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/eslint.png'),
+                name: 'ESLint',
+                url: 'https://zh-hans.eslint.org/',
+                introduction: '检测并修复JS代码中的问题。'
+            },
+            {
+                iconPath: require('@/assets/icon/yarn.png'),
+                name: 'Yarn',
+                url: 'https://www.yarnpkg.cn/',
+                introduction: 'Yarn中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/pnpm.png'),
+                name: 'pnpm',
+                url: 'https://www.pnpm.cn/',
+                introduction: 'pnpm中文文档'
+            },
+        ]
+    },
+    {
+        title: '工具',
+        children: [
+            {
+                iconPath: require('@/assets/icon/caniuse.png'),
+                name: 'Can I use',
+                url: 'https://caniuse.com/',
+                introduction: '前端兼容性自查工具'
+            },
+            {
+                iconPath: require('@/assets/icon/bootcdn.png'),
+                name: 'BootCDN',
+                url: 'https://www.bootcdn.cn/',
+                introduction: 'CDN加速服务'
+            },
+            {
+                iconPath: require('@/assets/icon/zsgj.png'),
+                name: '在线工具',
+                url: 'https://tool.lu/',
+                introduction: '你的工具箱'
+            },
+            {
+                iconPath: require('@/assets/icon/yq.png'),
+                name: '依奇',
+                url: 'https://www.wdku.net/',
+                introduction: '在线超级转换工具'
+            },
+            {
+                iconPath: require('@/assets/icon/bejson.png'),
+                name: 'BeJSON',
+                url: 'https://www.bejson.com/',
+                introduction: '在线 JSON 校验 格式化'
+            },
+            {
+                iconPath: require('@/assets/icon/mgj.png'),
+                name: '码工具',
+                url: 'https://www.matools.com/',
+                introduction: '代码在线工具箱'
+            },
+            {
+                iconPath: require('@/assets/icon/zxkt.png'),
+                name: 'remove bg',
+                url: 'https://www.remove.bg/zh',
+                introduction: '在线抠图 去除背景'
+            },
+            {
+                iconPath: require('@/assets/icon/cl.png'),
+                name: '草料二维码',
+                url: 'https://cli.im/',
+                introduction: '二维码生成器'
+            },
+            {
+                iconPath: require('@/assets/icon/sojson.png'),
+                name: 'SO JSON',
+                url: 'https://www.sojson.com/',
+                introduction: 'JSON在线工具'
+            },
+            {
+                iconPath: require('@/assets/icon/gsgj.png'),
+                name: '高手工具',
+                url: 'https://c.p2hp.com/',
+                introduction: '不止于工具'
+            },
+            {
+                iconPath: require('@/assets/icon/mkgjx.png'),
+                name: '孟坤工具箱',
+                url: 'http://tool.mkblog.cn/',
+                introduction: '孟坤工具箱网页版'
+            },
+            {
+                iconPath: require('@/assets/icon/TXT.png'),
+                name: 'TXT',
+                url: 'http://www.txttool.com/',
+                introduction: 'TXT文本处理工具'
+            },
+            {
+                iconPath: require('@/assets/icon/aigei.png'),
+                name: '爱给',
+                url: 'https://www.aigei.com/',
+                introduction: '音效配乐 模型 视频素材'
+            },
+        ]
+    },
+    {
+        title: '算法',
+        children: [
+            {
+                iconPath: require('@/assets/icon/likou.png'),
+                name: '力扣',
+                url: 'https://leetcode.cn/',
+                introduction: '全球极客挚爱的技术成长平台'
+            },
+            {
+                iconPath: require('@/assets/icon/lm.png'),
+                name: '炼码',
+                url: 'https://www.lintcode.com/',
+                introduction: 'LintCode炼码'
             },
         ]
     }
