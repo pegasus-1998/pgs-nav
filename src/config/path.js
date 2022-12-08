@@ -301,6 +301,24 @@ export default [
                 url: 'https://www.nodejs.red/#/',
                 introduction: 'Nodejs技术栈'
             },
+            {
+                iconPath: require('@/assets/icon/node.png'),
+                name: 'express',
+                url: 'http://expressjs.jser.us/',
+                introduction: 'Express中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/node.png'),
+                name: 'Koa',
+                url: 'https://koa.bootcss.com/',
+                introduction: 'Node.js的下一代web开发框架'
+            },
+            {
+                iconPath: require('@/assets/icon/egg.png'),
+                name: 'Egg',
+                url: 'https://www.eggjs.org/zh-CN/',
+                introduction: '为企业级框架和应用而生'
+            },
         ]
     },
     {
@@ -628,13 +646,7 @@ export default [
                 name: 'TXT',
                 url: 'http://www.txttool.com/',
                 introduction: 'TXT文本处理工具'
-            },
-            {
-                iconPath: require('@/assets/icon/aigei.png'),
-                name: '爱给',
-                url: 'https://www.aigei.com/',
-                introduction: '音效配乐 模型 视频素材'
-            },
+            }
         ]
     },
     {
@@ -651,6 +663,76 @@ export default [
                 name: '炼码',
                 url: 'https://www.lintcode.com/',
                 introduction: 'LintCode炼码'
+            },
+            {
+                iconPath: require('@/assets/icon/CSNotes.png'),
+                name: 'CS-Notes',
+                url: 'https://www.cyc2018.xyz/',
+                introduction: '算法 计算机基础 数据库'
+            },
+        ]
+    },
+    {
+        title: '素材',
+        children: [
+            {
+                iconPath: require('@/assets/icon/Pexels.png'),
+                name: 'Pexels',
+                url: 'https://www.pexels.com/zh-cn/',
+                introduction: '免费素材图片'
+            },
+            {
+                iconPath: require('@/assets/icon/sucai.png'),
+                name: '素材网',
+                url: 'http://www.100sucai.com/',
+                introduction: '专注网页素材'
+            },
+            {
+                iconPath: require('@/assets/icon/aigei.png'),
+                name: '爱给',
+                url: 'https://www.aigei.com/',
+                introduction: '音效配乐 模型 视频素材'
+            },
+            {
+                iconPath: require('@/assets/icon/zztuku.png'),
+                name: '站长图库',
+                url: 'https://www.zztuku.com/',
+                introduction: '精品VIP商业源码素材资源分享'
+            },
+            {
+                iconPath: require('@/assets/icon/huaban.png'),
+                name: '花瓣网',
+                url: 'https://huaban.com/',
+                introduction: '陪你做生活的设计师'
+            },
+        ]
+    },
+    {
+        title: '其它导航',
+        children: [
+            {
+                iconPath: require('@/assets/icon/8kmm.png'),
+                name: '八千网址导航',
+                url: 'https://www.8kmm.com/',
+                introduction: '技术导航 网址导航'
+            },
+            {
+                iconPath: require('@/assets/icon/webjike.png'),
+                name: '小呆导航',
+                url: 'https://webjike.com/',
+                introduction: '简洁网址导航'
+            },
+            {
+                iconPath: require('@/assets/icon/iiter.png'),
+                name: '艾特网',
+                url: 'https://iiter.cn/',
+                introduction: '程序员导航站'
+            },
+            {
+                iconPath: require('@/assets/icon/5cv.png'),
+                name: 'CV开发',
+                url: 'https://www.5cv.top/',
+                introduction: '前端网 前端社区'
             },
         ]
     }
