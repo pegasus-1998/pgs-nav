@@ -51,9 +51,7 @@ export default {
       }
     }
     .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+      @include flexWrapGap(15px);
       .card-mes {
         width: 19%;
       }

@@ -15,22 +15,22 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      mes: {
-        type: Object,
-        required: true
-      }
-    },
-    setup(props) {
-      function toLink() {
-        open(props.mes.url)
-      }
-      return {
-        toLink
-      }
+export default {
+  props: {
+    mes: {
+      type: Object,
+      required: true
+    }
+  },
+  setup(props) {
+    function toLink() {
+      open(props.mes.url)
+    }
+    return {
+      toLink
     }
   }
+}
 </script>
 
 
@@ -41,8 +41,7 @@
   color: #000000d9;
   background: #f5f5f5;
   .base-mes {
-    display: flex;
-    align-items: center;
+    @include flexItem;
     .logo {
       width: 20px;
       height: 20px;

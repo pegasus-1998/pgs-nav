@@ -19,42 +19,22 @@ $theme-color: #409eff;
     overflow: hidden;
 }
 
-@mixin center {
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-}
-
-@mixin fixCen {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@mixin hvCenter {
+@mixin flexAlignGap($gap) {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: $gap;
 }
 
-@mixin vCenter {
+@mixin flexColumnItemCen {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-@mixin spaceBetween {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-@mixin spaceBc {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+@mixin flexWrapGap($gap) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
 }
 
 @mixin flexItem {

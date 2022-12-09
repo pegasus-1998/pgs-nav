@@ -71,8 +71,7 @@ export default {
     height: 45px;
     line-height: 45px;
     .logo {
-      display: flex;
-      align-items: center;
+      @include flexItem;
       width: 180px;
       &-img {
         height: 30px;

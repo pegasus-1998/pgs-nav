@@ -9,7 +9,10 @@
           <span class="vert"></span>
         </li>
       </ul>
-      <div class="mes">© 2021-11-19 闽ICP备2021017230号</div>
+      <div class="mes">
+        <span>© 2021-11-19 </span>
+        <a href="https://beian.miit.gov.cn/#/Integrated/index" class="bei-link" target="blank">闽ICP备2021017230号</a>
+      </div>
     </div>
   </div>
 </template>
@@ -26,13 +29,10 @@ export default {
   background: #313131;
   .cen-container {
     .link-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
+      @include flexWrapGap(30px);
       padding-left: 70px;
       .link-item {
-        display: flex;
-        align-items: center;
+        @include flexItem;
         font-size: 12px;
         .vert {
           width: 1px;
@@ -40,15 +40,20 @@ export default {
           background: #a3a3a3;
         }
         .nav-link {
-            padding: 3px 10px;
-            &:hover {
-                text-decoration: underline;
-            }
+          padding: 3px 10px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
     .mes {
-        text-align: center;
+      text-align: center;
+      .bei-link {
+        &:hover {
+          color: $theme-color;
+        }
+      }
     }
   }
 }
