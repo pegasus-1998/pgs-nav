@@ -1,3 +1,5 @@
 <template>
-  关于
+  <span>about</span>
 </template>
+
+

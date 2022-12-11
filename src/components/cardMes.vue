@@ -8,8 +8,12 @@
       {{mes.introduction}}
     </div>
     <div class="btns-bar">
-      <img src="@/assets/images/copy.png" class="btn-icon" />
-      <img src="@/assets/images/coll.png" class="btn-icon" />
+      <el-tooltip content="复制链接" placement="top">
+        <img @click.stop="iconEvent(1)" src="@/assets/images/copy.png" class="btn-icon" />
+      </el-tooltip>
+      <el-tooltip content="收藏" placement="top">
+        <img @click.stop="iconEvent(2)" src="@/assets/images/coll.png" class="btn-icon" />
+      </el-tooltip>
     </div>
   </el-card>
 </template>
@@ -26,8 +30,17 @@ export default {
     function toLink() {
       open(props.mes.url)
     }
+    function iconEvent(num) {
+      if(num === 1) {
+
+      }
+      if(num === 2) {
+
+      }
+    }
     return {
-      toLink
+      toLink,
+      iconEvent
     }
   }
 }

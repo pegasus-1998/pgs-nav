@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar">
     <div class="nav-bar-main bx-width">
-      <div class="logo">
+      <div @click="$router.replace('/')" class="logo">
         <img src="@/assets/images/logo.png" class="logo-img" />
         <h1 class="logo-name">PEGASUS</h1>
       </div>
@@ -72,7 +72,9 @@ export default {
     line-height: 45px;
     .logo {
       @include flexItem;
+      cursor: pointer;
       width: 180px;
+      user-select: none;
       &-img {
         height: 30px;
         margin-right: 6px;

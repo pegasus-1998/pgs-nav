@@ -1,7 +1,7 @@
 <template>
   <div class="index bx-width">
     <top-search />
-    <el-card v-for="(item, idx) in cardReac" :key="idx" class="box-card" shadow="never">
+    <el-card v-for="(item, idx) in store.configPath" :key="idx" class="box-card" shadow="never">
       <div class="pick">
         <span class="pick-item pick-active">{{item.title}}</span>
         <!-- <span class="pick-item">收藏</span> -->
@@ -18,14 +18,13 @@
 import topSearch from './components/topSearch.vue'
 import leftNav from './components/leftNav.vue'
 import cardMes from '@/components/cardMes.vue'
-import configPath from '@/config/path.js'
-import { reactive } from 'vue'
+import { useNavPathStore } from '@/store/modules/navPath'
 export default {
   components: { leftNav, topSearch, cardMes },
   setup() {
-    const cardReac = reactive(configPath)
+    const store = useNavPathStore()
     return {
-      cardReac
+      store
     }
   }
 }
