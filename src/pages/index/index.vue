@@ -1,13 +1,24 @@
 <template>
   <div class="index bx-width">
     <top-search />
+    <path-nav/>
+    <div class="control">
+      <div class="control-item">
+        <span>图标</span>
+        <el-switch v-model="iconFlag" size='small'/>
+      </div>
+      <div class="control-item">
+        <span>简介</span>
+        <el-switch v-model="introFlag" size='small'/>
+      </div>
+    </div>
     <el-card v-for="(item, idx) in store.configPath" :key="idx" class="box-card" shadow="never">
       <div class="pick">
         <span class="pick-item pick-active">{{item.title}}</span>
         <!-- <span class="pick-item">收藏</span> -->
       </div>
       <div class="cards">
-        <card-mes v-for="(sItem, sIdx) in item.children" :key="sIdx" :mes='sItem' />
+        <card-mes v-for="(sItem, sIdx) in item.children" :key="sIdx" :mes='sItem' :controlFlags='flags'/>
       </div>
     </el-card>
     <el-backtop :right="100" :bottom="100" />
@@ -16,15 +27,22 @@
 
 <script>
 import topSearch from './components/topSearch.vue'
-import leftNav from './components/leftNav.vue'
+import pathNav from './components/pathNav.vue'
 import cardMes from '@/components/cardMes.vue'
 import { useNavPathStore } from '@/store/modules/navPath'
+import { reactive, toRefs } from 'vue'
 export default {
-  components: { leftNav, topSearch, cardMes },
+  components: { pathNav, topSearch, cardMes },
   setup() {
+    const flags = reactive({
+      iconFlag: true,
+      introFlag: true
+    })
     const store = useNavPathStore()
     return {
-      store
+      store,
+      flags,
+      ...toRefs(flags)
     }
   }
 }
@@ -32,6 +50,16 @@ export default {
 
 <style lang='scss' scoped>
 .index {
+  .control {
+    @include flexEndCenterGap(12px);
+    font-size: 12px;
+    &-item {
+      @include flexItem;
+      .el-switch {
+        margin-left: 5px;
+      }
+    }
+  }
   .box-card {
     margin: 25px 0;
     .pick {

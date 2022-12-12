@@ -64,8 +64,11 @@ export default {
 
 <style lang='scss' scoped>
 .nav-bar {
-  border-bottom: 2px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 9;
   background: #fff;
+  border-bottom: 2px solid #ccc;
   &-main {
     display: flex;
     height: 45px;

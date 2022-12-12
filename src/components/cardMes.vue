@@ -1,10 +1,10 @@
 <template>
   <el-card @click="toLink" class="card-mes" shadow="hover">
     <div class="base-mes">
-      <img :src="mes.iconPath" class="logo" />
+      <img v-show="iconFlag" :src="mes.iconPath" class="logo" />
       <span class="name">{{mes.name}}</span>
     </div>
-    <div class="introduction">
+    <div v-show="introFlag" class="introduction">
       {{mes.introduction}}
     </div>
     <div class="btns-bar">
@@ -19,9 +19,16 @@
 </template>
 
 <script>
+import { toRefs } from 'vue'
+import { copyStr } from '@/utils/textCtr'
+import { ElMessage } from 'element-plus'
 export default {
   props: {
     mes: {
+      type: Object,
+      required: true
+    },
+    controlFlags: {
       type: Object,
       required: true
     }
@@ -32,7 +39,11 @@ export default {
     }
     function iconEvent(num) {
       if(num === 1) {
-
+        copyStr(props.mes.url)
+        ElMessage({
+          type: 'success',
+          message: '链接已复制！'
+        })
       }
       if(num === 2) {
 
@@ -40,7 +51,8 @@ export default {
     }
     return {
       toLink,
-      iconEvent
+      iconEvent,
+      ...toRefs(props.controlFlags)
     }
   }
 }

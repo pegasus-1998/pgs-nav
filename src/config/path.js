@@ -1,5 +1,6 @@
 export default [
     {
+        id: 'tuijian',
         title: '推荐',
         children: [
             {
@@ -113,6 +114,7 @@ export default [
         ]
     },
     {
+        id: 'javascript',
         title: 'JavasSript',
         children: [
             {
@@ -136,6 +138,7 @@ export default [
         ]
     },
     {
+        id: 'css',
         title: 'CSS',
         children: [
             {
@@ -165,6 +168,7 @@ export default [
         ]
     },
     {
+        id: 'jquery',
         title: 'JQuery',
         children: [
             {
@@ -194,6 +198,7 @@ export default [
         ]
     },
     {
+        id: 'vue',
         title: 'Vue',
         children: [
             {
@@ -241,6 +246,7 @@ export default [
         ]
     },
     {
+        id: 'react',
         title: 'React',
         children: [
             {
@@ -270,6 +276,7 @@ export default [
         ]
     },
     {
+        id: 'angular',
         title: 'Angular',
         children: [
             {
@@ -281,6 +288,7 @@ export default [
         ]
     },
     {
+        id: 'node',
         title: 'Node.js',
         children: [
             {
@@ -322,6 +330,7 @@ export default [
         ]
     },
     {
+        id: 'typescript',
         title: 'TypeScript',
         children: [
             {
@@ -339,6 +348,7 @@ export default [
         ]
     },
     {
+        id: 'bianjiqi',
         title: '编辑器',
         children: [
             {
@@ -368,6 +378,7 @@ export default [
         ]
     },
     {
+        id: 'git',
         title: 'Git',
         children: [
             {
@@ -385,6 +396,7 @@ export default [
         ]
     },
     {
+        id: 'zujianku',
         title: '组件库',
         children: [
             {
@@ -444,6 +456,7 @@ export default [
         ]
     },
     {
+        id: 'zititubiao',
         title: '字体图标',
         children: [
             {
@@ -485,6 +498,7 @@ export default [
         ]
     },
     {
+        id: 'kuapingtai',
         title: '跨平台',
         children: [
             {
@@ -502,6 +516,7 @@ export default [
         ]
     },
     {
+        id: 'goujian',
         title: '构建',
         children: [
             {
@@ -573,6 +588,7 @@ export default [
         ]
     },
     {
+        id: 'gongju',
         title: '工具',
         children: [
             {
@@ -650,6 +666,7 @@ export default [
         ]
     },
     {
+        id: 'suanfa',
         title: '算法',
         children: [
             {
@@ -673,6 +690,7 @@ export default [
         ]
     },
     {
+        id: 'sucai',
         title: '素材',
         children: [
             {
@@ -708,6 +726,7 @@ export default [
         ]
     },
     {
+        id: 'othernav',
         title: '其它导航',
         children: [
             {
