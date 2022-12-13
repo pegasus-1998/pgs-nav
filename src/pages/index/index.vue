@@ -1,24 +1,21 @@
 <template>
   <div class="index bx-width">
     <top-search />
-    <path-nav/>
+    <path-nav />
     <div class="control">
       <div class="control-item">
         <span>图标</span>
-        <el-switch v-model="iconFlag" size='small'/>
+        <el-switch v-model="iconFlag" size='small' />
       </div>
       <div class="control-item">
         <span>简介</span>
-        <el-switch v-model="introFlag" size='small'/>
+        <el-switch v-model="introFlag" size='small' />
       </div>
     </div>
-    <el-card v-for="(item, idx) in store.configPath" :key="idx" class="box-card" shadow="never">
-      <div class="pick">
-        <span class="pick-item pick-active">{{item.title}}</span>
-        <!-- <span class="pick-item">收藏</span> -->
-      </div>
+    <el-card v-for="(item, idx) in store.configPath" :key="idx" :id="item.id" class="box-card" shadow="never">
+      <div class="pick">{{item.title}}</div>
       <div class="cards">
-        <card-mes v-for="(sItem, sIdx) in item.children" :key="sIdx" :mes='sItem' :controlFlags='flags'/>
+        <card-mes v-for="(sItem, sIdx) in item.children" :key="sIdx" :mes='sItem' :controlFlags='flags' />
       </div>
     </el-card>
     <el-backtop :right="100" :bottom="100" />
@@ -63,19 +60,12 @@ export default {
   .box-card {
     margin: 25px 0;
     .pick {
-      display: flex;
-      gap: 10px;
+      width: max-content;
+      color: #fff;
+      padding: 5px 18px;
       margin-bottom: 15px;
-      &-item {
-        cursor: pointer;
-        padding: 5px 18px;
-        border-radius: 4px;
-        background: #ccc;
-      }
-      &-active {
-        color: #fff;
-        background: $theme-color;
-      }
+      border-radius: 4px;
+      background: $theme-color;
     }
     .cards {
       @include flexWrapGap(15px);

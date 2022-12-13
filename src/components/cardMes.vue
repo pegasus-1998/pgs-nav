@@ -1,7 +1,7 @@
 <template>
   <el-card @click="toLink" class="card-mes" shadow="hover">
     <div class="base-mes">
-      <img v-show="iconFlag" :src="mes.iconPath" class="logo" />
+      <el-image v-show="iconFlag" :src="mes.iconPath" lazy class="logo"/>
       <span class="name">{{mes.name}}</span>
     </div>
     <div v-show="introFlag" class="introduction">

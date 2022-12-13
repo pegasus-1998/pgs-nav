@@ -8,7 +8,7 @@
 import navBar from '@/components/navBar.vue'
 import bottomWeb from '@/components/bottomWeb.vue'
 export default {
-  components: { navBar, bottomWeb }
+  components: { navBar, bottomWeb}
 }
 </script>
 
