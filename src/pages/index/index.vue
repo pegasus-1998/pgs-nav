@@ -1,8 +1,8 @@
 <template>
-  <div class="index bx-width">
-    <top-search />
+  <div class="index">
+    <top-search bx-width/>
     <path-nav />
-    <div class="control">
+    <div class="control bx-width">
       <div class="control-item">
         <span>图标</span>
         <el-switch v-model="iconFlag" size='small' />
@@ -12,12 +12,13 @@
         <el-switch v-model="introFlag" size='small' />
       </div>
     </div>
-    <el-card v-for="(item, idx) in store.configPath" :key="idx" :id="item.id" class="box-card" shadow="never">
+    <el-card v-for="(item, idx) in store.configPath" :key="idx" :id="item.id" class="box-card bx-width" shadow="never">
       <div class="pick">{{item.title}}</div>
       <div class="cards">
         <card-mes v-for="(sItem, sIdx) in item.children" :key="sIdx" :mes='sItem' :controlFlags='flags' />
       </div>
     </el-card>
+    <bottom-web />
     <el-backtop :right="100" :bottom="100" />
   </div>
 </template>
@@ -26,10 +27,11 @@
 import topSearch from './components/topSearch.vue'
 import pathNav from './components/pathNav.vue'
 import cardMes from '@/components/cardMes.vue'
+import bottomWeb from '@/components/bottomWeb.vue'
 import { useNavPathStore } from '@/store/modules/navPath'
 import { reactive, toRefs } from 'vue'
 export default {
-  components: { pathNav, topSearch, cardMes },
+  components: { pathNav, topSearch, cardMes, bottomWeb },
   setup() {
     const flags = reactive({
       iconFlag: true,
@@ -58,7 +60,7 @@ export default {
     }
   }
   .box-card {
-    margin: 25px 0;
+    margin: 25px auto;
     .pick {
       width: max-content;
       color: #fff;

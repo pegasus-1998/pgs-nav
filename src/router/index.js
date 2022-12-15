@@ -3,11 +3,31 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    component: () => import('@/pages/index/index.vue')
+    component: () => import('@/pages/index'),
+    meta: {
+      title: '首页'
+    }
+  },
+  {
+    path: '/timeAxis',
+    component: () => import('@/pages/timeAxis'),
+    meta: {
+      title: '时间轴'
+    }
+  },
+  {
+    path: '/collection',
+    component: () => import('@/pages/collection'),
+    meta: {
+      title: '收藏'
+    }
   },
   {
     path: '/about',
-    component: () => import('@/pages/about/index.vue')
+    component: () => import('@/pages/about'),
+    meta: {
+      title: '关于'
+    }
   }
 ]
 
