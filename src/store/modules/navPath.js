@@ -1,11 +1,16 @@
 import { defineStore } from 'pinia'
+import { ElMessage } from 'element-plus'
 import configPath from '@/config/path.js'
 
-export const useNavPathStore = defineStore('navPath', {
+let collArr = localStorage.getItem('collArr')
+
+collArr ? collArr = JSON.parse(collArr) : collArr = []
+
+const useNavPathStore = defineStore('navPath', {
     state() {
         return {
             configPath,
-            count: 10,
+            localCollArr: collArr
         }
     },
     getters: {
@@ -16,8 +21,26 @@ export const useNavPathStore = defineStore('navPath', {
         }
     },
     actions: {
-        addCount() {
-            this.count++
+        setCollArr(obj) {
+            const idx = this.localCollArr.findIndex(item => item.url === obj.url)
+            if(idx === -1) {
+                this.localCollArr.push(obj)
+                ElMessage({
+                    type: 'success',
+                    message: '收藏成功！'
+                })
+            }else {
+                this.localCollArr.splice(idx, 1)
+                ElMessage({
+                    type: 'error',
+                    message: '取消收藏！'
+                })
+            }
+            localStorage.setItem('collArr', JSON.stringify(this.localCollArr))     
         }
     }
 })
+
+export {
+    useNavPathStore
+}

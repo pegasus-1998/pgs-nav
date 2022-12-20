@@ -15,7 +15,7 @@
     <el-card v-for="(item, idx) in store.configPath" :key="idx" :id="item.id" class="box-card bx-width" shadow="never">
       <div class="pick">{{item.title}}</div>
       <div class="cards">
-        <card-mes v-for="(sItem, sIdx) in item.children" :key="sIdx" :mes='sItem' :controlFlags='flags' />
+        <card-mes v-for="sItem in item.children" :key="sItem.url" :mes='sItem' :controlFlags='flags' />
       </div>
     </el-card>
     <bottom-web />
