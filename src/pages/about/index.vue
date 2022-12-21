@@ -6,7 +6,7 @@
         <span class="title-text">关于</span>
       </div>
       <div class="con-row">
-        此网站开始于2021-06-05 于2022-12-03使用
+        此网站开始于2021-06-05。于2022-12-03使用
         <a href="https://cn.vuejs.org/" class="link" target="blank">vue3</a> + 
         <a href="https://pinia.vuejs.org/zh/" class="link" target="blank">pinia</a> + 
         <a href="https://element-plus.gitee.io/zh-CN/" class="link" target="blank">element-plus</a> 重写

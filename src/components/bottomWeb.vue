@@ -5,7 +5,7 @@
       <ul class="link-container">
         <li class="link-item">
           <span class="vert"></span>
-          <a href="https://vue.miaya.art/en-us" target="blank" class="nav-link">Fext UI</a>
+          <a href="https://vue.miaya.art/zh-cn" target="blank" class="nav-link">Fext UI</a>
           <span class="vert"></span>
         </li>
       </ul>
