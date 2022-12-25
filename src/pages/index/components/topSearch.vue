@@ -48,6 +48,11 @@ export default {
         src: 'https://www.zhihu.com/search?type=content&q=',
         icon: require('@/assets/icon/searchzhihu.png')
       },
+      {
+        text: 'CSDN',
+        src: 'https://so.csdn.net/so/search?spm=1000.2115.3001.4498&q=',
+        icon: require('@/assets/icon/csdn.png')
+      }
     ])
     let searVal = ref('')
     let activeIdx = ref(0)

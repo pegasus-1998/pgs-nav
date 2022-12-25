@@ -12,6 +12,7 @@
         <router-link to="/about">关于</router-link>
       </div>
       <div class="other-con">
+        <el-switch v-model="darkM" @change='switchChange' :active-icon="Sunny" :inactive-icon="Moon" inline-prompt/>
         {{month}}月{{date}}日 {{hour}}:{{minute}}:{{second}} 星期{{week}}
       </div>
     </div>
@@ -19,9 +20,15 @@
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
+import 'element-plus/theme-chalk/dark/css-vars.css'
+import { useDark, useToggle } from '@vueuse/core'
+import { reactive, toRefs, ref } from 'vue'
+import { Sunny, Moon } from '@element-plus/icons-vue'
 export default {
   setup() {
+    const darkM = ref(false)
+    const isDark = useDark()
+    const toggleDark = useToggle(isDark)
     const dateObj = reactive({
       month: '',
       date: '',
@@ -57,8 +64,20 @@ export default {
         case 7: return '日'
       }
     }
+    function switchChange(e) {
+      if(e) {
+
+      }else {
+
+      }
+      toggleDark()
+    }
     return {
-      ...toRefs(dateObj)
+      Sunny,
+      Moon,
+      darkM,
+      ...toRefs(dateObj),
+      switchChange
     }
   }
 }
@@ -66,7 +85,7 @@ export default {
 
 <style lang='scss' scoped>
 .nav-bar {
-  background: #fff;
+  background: var(--white-black);
   border-bottom: 2px solid #ccc;
   &-main {
     display: flex;
@@ -98,9 +117,13 @@ export default {
       }
     }
     .other-con {
-      width: 180px;
+      display: flex;
+      align-items: center;
       color: #666;
       font-size: 12px;
+      .el-switch {
+        margin-right: 10px;
+      }
     }
   }
 }

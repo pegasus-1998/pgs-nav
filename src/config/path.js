@@ -516,6 +516,24 @@ export default [
         ]
     },
     {
+        id: 'Electron',
+        title: 'Electron',
+        children: [
+            {
+                iconPath: require('@/assets/icon/Electron.png'),
+                name: 'Electron中文网',
+                url: 'http://electron.org.cn/',
+                introduction: '专业Electron中文技术站点'
+            },
+            {
+                iconPath: require('@/assets/icon/Electron2.png'),
+                name: 'Electron入门指南',
+                url: 'https://www.electronjs.org/zh/docs/latest/',
+                introduction: '构建桌面应用程序的框架'
+            }
+        ]
+    },
+    {
         id: 'goujian',
         title: '构建',
         children: [

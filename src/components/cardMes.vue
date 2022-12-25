@@ -70,8 +70,8 @@ export default {
 .card-mes {
   cursor: pointer;
   width: 260px;
-  color: #000000d9;
-  background: #f5f5f5;
+  color: var(--font-text);
+  background: var(--bg-color);
   .base-mes {
     @include flexItem;
     .logo {

@@ -54,8 +54,8 @@ export default {
   text-align: center;
   font-size: 13px;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  background: var(--white-black);
+  box-shadow: var(--nav-box-shadow);
   overflow: hidden;
   .top-icon {
     padding-top: 5px;
