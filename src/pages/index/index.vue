@@ -67,7 +67,7 @@ export default {
       padding: 5px 18px;
       margin-bottom: 15px;
       border-radius: 4px;
-      background: $theme-color;
+      background: var(--theme-color);
     }
     .cards {
       @include flexWrapGap(15px);

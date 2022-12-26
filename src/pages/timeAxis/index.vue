@@ -1,6 +1,12 @@
 <template>
   <el-card class="time-axis bx-width">
     <el-timeline>
+      <el-timeline-item timestamp="2022-12-22" placement="top">
+        <el-card>
+          <h4 class="title">暗黑模式</h4>
+          <div class="con">页面新增暗黑模式</div>
+        </el-card>
+      </el-timeline-item>
       <el-timeline-item timestamp="2022-12-21" placement="top">
         <el-card>
           <h4 class="title">收藏</h4>

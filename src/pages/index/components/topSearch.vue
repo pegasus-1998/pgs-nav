@@ -87,7 +87,7 @@ export default {
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
         &:hover {
-          background: $theme-color;
+          background: var(--theme-color);
         }
         .ico-img {
           display: block;
@@ -95,22 +95,22 @@ export default {
         }
       }
       .kind-active-item {
-        background: $theme-color;
+        background: var(--theme-color);
       }
     }
     .search-container {
       display: flex;
       height: 38px;
       .input-container {
-        border: 1px solid $theme-color;
+        border: 1px solid var(--theme-color);
         width: 350px;
         text-indent: 1em;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
-        color: $theme-color;
+        color: var(--theme-color);
         &::placeholder {
           font-size: 12px;
-          color: $theme-color;
+          color: var(--theme-color);
         }
       }
       .sp-btn {
@@ -120,7 +120,7 @@ export default {
         padding: 0 30px;
         letter-spacing: 5px;
         user-select: none;
-        background: $theme-color;
+        background: var(--theme-color);
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
         .active-icon {

@@ -51,7 +51,7 @@ export default {
       text-align: center;
       .bei-link {
         &:hover {
-          color: $theme-color;
+          color: var(--theme-color);
         }
       }
     }

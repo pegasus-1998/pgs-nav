@@ -12,7 +12,8 @@
         <router-link to="/about">关于</router-link>
       </div>
       <div class="other-con">
-        <el-switch v-model="darkM" @change='switchChange' :active-icon="Sunny" :inactive-icon="Moon" inline-prompt/>
+        <el-color-picker v-model="themeColor" @change='changeEvent' size='small' />
+        <el-switch v-model="darkM" @change='toggleDark' :active-icon="Sunny" :inactive-icon="Moon" inline-prompt />
         {{month}}月{{date}}日 {{hour}}:{{minute}}:{{second}} 星期{{week}}
       </div>
     </div>
@@ -26,8 +27,11 @@ import { reactive, toRefs, ref } from 'vue'
 import { Sunny, Moon } from '@element-plus/icons-vue'
 export default {
   setup() {
+    const str = localStorage.getItem('themeColor')
+    const themeColor = ref(str || '#409eff')
     const darkM = ref(false)
     const isDark = useDark()
+    darkM.value = isDark.value
     const toggleDark = useToggle(isDark)
     const dateObj = reactive({
       month: '',
@@ -38,6 +42,7 @@ export default {
       week: ''
     })
     forDate()
+    str && changeEvent(str)
     setInterval(forDate, 1000)
     function forDate() {
       const d = new Date()
@@ -64,20 +69,23 @@ export default {
         case 7: return '日'
       }
     }
-    function switchChange(e) {
-      if(e) {
-
-      }else {
-
+    function changeEvent(e) {
+      if(!e) {
+        e = '#409eff'
+        themeColor.value = '#409eff'
       }
-      toggleDark()
+      document.body.style.setProperty('--theme-color', e)
+      document.body.style.setProperty('--el-color-primary', e)
+      localStorage.setItem('themeColor', e)
     }
     return {
       Sunny,
       Moon,
+      themeColor,
       darkM,
       ...toRefs(dateObj),
-      switchChange
+      toggleDark,
+      changeEvent
     }
   }
 }
@@ -113,7 +121,7 @@ export default {
       margin: 0 25px;
       letter-spacing: 3px;
       .router-link-active {
-        color: $theme-color;
+        color: var(--theme-color);
       }
     }
     .other-con {
@@ -124,6 +132,10 @@ export default {
       .el-switch {
         margin-right: 10px;
       }
+    }
+    &:deep(.el-color-picker__trigger) {
+      border: none;
+      margin-right: 10px;
     }
   }
 }

@@ -68,6 +68,7 @@
       .img-item {
         width: 230px;
         margin: 15px;
+        border: 5px solid #ccc;
       }
     }
   }

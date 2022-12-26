@@ -36,4 +36,6 @@ const router = createRouter({
   routes
 })
 
+router.afterEach(to => document.title = to.meta.title + '- pgs-nav')
+
 export default router

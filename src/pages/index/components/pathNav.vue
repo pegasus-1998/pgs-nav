@@ -71,7 +71,7 @@ export default {
     padding: 5px;
     &:hover {
       color: #fff;
-      background: $theme-color;
+      background: var(--theme-color);
     }
   }
 }
