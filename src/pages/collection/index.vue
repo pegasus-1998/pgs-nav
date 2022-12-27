@@ -4,7 +4,7 @@
     <div class="cards">
       <card-mes v-for="item in store.localCollArr" :key="item.url" :mes='item' :controlFlags='flags' />
     </div>
-    <el-empty :image-size="200" description='空空如也'/>
+    <el-empty v-if='store.localCollArr.length === 0' :image-size="200" description='空空如也'/>
   </el-card>
 </template>
 

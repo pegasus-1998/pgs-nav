@@ -128,12 +128,6 @@ export default [
                 name: 'ES6 入门教程',
                 url: 'https://es6.ruanyifeng.com/',
                 introduction: 'ECMAScript6新语法特性。'
-            },
-            {
-                iconPath: require('@/assets/icon/axios.png'),
-                name: 'axios',
-                url: 'http://www.axios-js.com/zh-cn/docs/',
-                introduction: 'axios中文文档'
             }
         ]
     },
@@ -378,6 +372,66 @@ export default [
         ]
     },
     {
+        id: 'jsku',
+        title: 'JS库',
+        children: [
+            {
+                iconPath: require('@/assets/icon/Lodash.png'),
+                name: 'Lodash',
+                url: 'https://www.lodashjs.com/',
+                introduction: 'JavaScript 实用工具库'
+            },
+            {
+                iconPath: require('@/assets/icon/axios.png'),
+                name: 'axios',
+                url: 'http://www.axios-js.com/zh-cn/docs/',
+                introduction: 'axios中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/dayjs.png'),
+                name: 'Day.js',
+                url: 'https://dayjs.gitee.io/zh-CN/',
+                introduction: 'Day.js中文文档'
+            },
+            {
+                iconPath: require('@/assets/icon/npm.png'),
+                name: 'js-cookie',
+                url: 'https://www.npmjs.com/package/js-cookie',
+                introduction: '简单 轻量 cookie的jsAPI'
+            },
+            {
+                iconPath: require('@/assets/icon/nprogress.png'),
+                name: 'nprogress',
+                url: 'https://ricostacruz.com/nprogress/',
+                introduction: '轻量级进度条常见库'
+            },
+            {
+                iconPath: require('@/assets/icon/ECharts.png'),
+                name: 'ECharts',
+                url: 'https://echarts.apache.org/zh/',
+                introduction: '开源可视化图表库'
+            },
+            {
+                iconPath: require('@/assets/icon/ThreeJs.png'),
+                name: 'ThreeJs',
+                url: 'http://www.webgl3d.cn/',
+                introduction: 'Three.js中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/Swiper.png'),
+                name: 'Swiper',
+                url: 'https://www.swiper.com.cn/',
+                introduction: 'Swiper中文网'
+            },
+            {
+                iconPath: require('@/assets/icon/wow.png'),
+                name: 'wow.js',
+                url: 'https://wowjs.uk/',
+                introduction: '滚动展示动画'
+            }
+        ]
+    },
+    {
         id: 'git',
         title: 'Git',
         children: [
@@ -401,9 +455,15 @@ export default [
         children: [
             {
                 iconPath: require('@/assets/icon/element.png'),
-                name: 'Element',
+                name: 'Element-ui',
                 url: 'https://element.eleme.cn/#/zh-CN',
                 introduction: '基于 Vue 的桌面端组件库'
+            },
+            {
+                iconPath: require('@/assets/icon/element.png'),
+                name: 'Element-Plus',
+                url: 'https://element-plus.gitee.io/zh-CN/',
+                introduction: '基于 Vue 3 的桌面端组件库'
             },
             {
                 iconPath: require('@/assets/icon/vant.jpg'),

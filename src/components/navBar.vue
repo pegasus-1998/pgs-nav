@@ -14,7 +14,14 @@
       <div class="other-con">
         <el-color-picker v-model="themeColor" @change='changeEvent' size='small' />
         <el-switch v-model="darkM" @change='toggleDark' :active-icon="Sunny" :inactive-icon="Moon" inline-prompt />
-        {{month}}月{{date}}日 {{hour}}:{{minute}}:{{second}} 星期{{week}}
+        <span>{{month}}月{{date}}日 {{hour}}:{{minute}}:{{second}} 星期{{week}}</span>
+        <el-popover>
+          <template #reference>2.X</template>
+          <a href="https://pgs98.com/pgs1.0/" target="blank" class="pop-con">
+            <span>1.X </span>
+            <img src="@/assets/images/share.png" class="share-icon" />
+          </a>
+        </el-popover>
       </div>
     </div>
   </div>
@@ -28,6 +35,7 @@ import { Sunny, Moon } from '@element-plus/icons-vue'
 export default {
   setup() {
     const str = localStorage.getItem('themeColor')
+    let visible = ref(false)
     const themeColor = ref(str || '#409eff')
     const darkM = ref(false)
     const isDark = useDark()
@@ -70,7 +78,7 @@ export default {
       }
     }
     function changeEvent(e) {
-      if(!e) {
+      if (!e) {
         e = '#409eff'
         themeColor.value = '#409eff'
       }
@@ -79,6 +87,7 @@ export default {
       localStorage.setItem('themeColor', e)
     }
     return {
+      visible,
       Sunny,
       Moon,
       themeColor,
@@ -125,18 +134,23 @@ export default {
       }
     }
     .other-con {
-      display: flex;
-      align-items: center;
+      @include flexAlignGap(10px);
       color: #666;
       font-size: 12px;
-      .el-switch {
-        margin-right: 10px;
-      }
     }
     &:deep(.el-color-picker__trigger) {
       border: none;
-      margin-right: 10px;
     }
+  }
+}
+</style>
+
+<style lang="scss" scoped>
+.pop-con {
+  @include flexCen;
+  cursor: pointer;
+  .share-icon {
+    width: 26px;
   }
 }
 </style>

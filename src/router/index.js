@@ -36,6 +36,6 @@ const router = createRouter({
   routes
 })
 
-router.afterEach(to => document.title = to.meta.title + '- pgs-nav')
+router.afterEach(to => document.title = 'pgs-nav | 前端导航 -' + to.meta.title)
 
 export default router

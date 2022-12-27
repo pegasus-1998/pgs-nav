@@ -43,6 +43,12 @@
     align-items: center;
 }
 
+@mixin flexCen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin flexItem {
     display: flex;
     align-items: center;
