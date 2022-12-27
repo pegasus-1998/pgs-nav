@@ -3,7 +3,7 @@
 
 vue3 + pinia + element-plus
 
-- [pgs-nav](https://pgs98.com)
+> [pgs-nav](https://pgs98.com) 前端网站导航
 
 > [vue.js](https://cn.vuejs.org/) 构建用户界面的 MVVM 框架 易于上手，还便于与第三方库或既有项目合
 
