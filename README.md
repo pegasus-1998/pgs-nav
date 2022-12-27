@@ -13,6 +13,14 @@ vue3 + pinia + element-plus
 
 > [dayjs](https://dayjs.gitee.io/zh-CN/) 轻量的处理时间和日期的 JavaScript 库
 
+## 步骤
+
+`npm install`
+
+`npm run serve`
+
+`npm run build`
+
 ## License
 
 [MIT](https://github.com/pegasus-1998/pgs-nav/blob/main/LICENSE)
