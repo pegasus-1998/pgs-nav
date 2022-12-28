@@ -804,6 +804,48 @@ export default [
         ]
     },
     {
+        id: 'shequ',
+        title: '社区',
+        children: [
+            {
+                iconPath: require('@/assets/icon/Vue.png'),
+                name: 'vue-js',
+                url: 'https://www.vue-js.com/',
+                introduction: 'Vue.js专业中文社区'
+            },
+            {
+                iconPath: require('@/assets/icon/ECharts.png'),
+                name: 'makeapie',
+                url: 'https://www.makeapie.cn/echarts',
+                introduction: 'echarts社区'
+            }
+        ]
+    },
+    {
+        id: 'yingyu',
+        title: '英语',
+        children: [
+            {
+                iconPath: require('@/assets/icon/duolingguo.png'),
+                name: '多邻国',
+                url: 'https://www.duolingo.cn/',
+                introduction: '学外语 学习就像玩游戏！'
+            },
+            {
+                iconPath: require('@/assets/icon/keke.png'),
+                name: '可可英语',
+                url: 'http://www.kekenet.com/',
+                introduction: '免费英语学习网站'
+            },
+            {
+                iconPath: require('@/assets/icon/tjxz.png'),
+                name: '田间小站',
+                url: 'https://www.tjxz.cc/',
+                introduction: '高级英语学习'
+            }
+        ]
+    },
+    {
         id: 'othernav',
         title: '其它导航',
         children: [

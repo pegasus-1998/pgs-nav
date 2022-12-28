@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <top-search bx-width/>
+    <top-search/>
     <path-nav />
     <div class="control bx-width">
       <div class="control-item">

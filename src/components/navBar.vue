@@ -16,7 +16,9 @@
         <el-switch v-model="darkM" @change='toggleDark' :active-icon="Sunny" :inactive-icon="Moon" inline-prompt />
         <span>{{month}}月{{date}}日 {{hour}}:{{minute}}:{{second}} 星期{{week}}</span>
         <el-popover>
-          <template #reference>2.X</template>
+          <template #reference>
+            <span class="version-sp">2.X</span>
+          </template>
           <a href="https://pgs98.com/pgs1.0/" target="blank" class="pop-con">
             <span>1.X </span>
             <img src="@/assets/images/share.png" class="share-icon" />
@@ -146,9 +148,13 @@ export default {
 </style>
 
 <style lang="scss" scoped>
+.version-sp {
+  color: var(--theme-color);
+}
 .pop-con {
   @include flexCen;
   cursor: pointer;
+  color: var(--theme-color);
   .share-icon {
     width: 26px;
   }

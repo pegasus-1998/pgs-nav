@@ -24,7 +24,7 @@
         GitHub: <a href="https://github.com/pegasus-1998/pgs-nav" target="blank" class="link">https://github.com/pegasus-1998/pgs-nav</a>
       </div>
       <div class="con-row">
-        Gitee: <a href="https://github.com/pegasus-1998/pgs-nav" target="blank" class="link">https://github.com/pegasus-1998/pgs-nav</a>
+        Gitee: <a href="https://gitee.com/pegasus-1998/pgs-nav" target="blank" class="link">https://gitee.com/pegasus-1998/pgs-nav</a>
       </div>
     </div>
     <div class="content">

@@ -1,6 +1,12 @@
 <template>
   <el-card class="time-axis bx-width">
     <el-timeline>
+      <el-timeline-item timestamp="2022-12-29" placement="top">
+        <el-card>
+          <h4 class="title">优化</h4>
+          <div class="con">使用KeepAlive组件缓存，Element Plus按需自动导入</div>
+        </el-card>
+      </el-timeline-item>
       <el-timeline-item timestamp="2022-12-22" placement="top">
         <el-card>
           <h4 class="title">暗黑模式</h4>
