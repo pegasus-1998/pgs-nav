@@ -3,7 +3,7 @@
     <li class="top-icon">
       <img @click="backTop" src="@/assets/images/logo.png" class="logo-img"/>
     </li>
-    <li v-for="(item, idx) in store.configPath" @click="maoDianEvent(item.id)" :key="idx" class="to-item">
+    <li v-for="(item, idx) in store.configPath" @click="maoDianEvent(item.id, idx)" :key="idx" class="to-item">
       {{item.title}}
     </li>
   </ul>
@@ -13,12 +13,15 @@
 import { ref } from 'vue'
 import { useNavPathStore } from '@/store/modules/navPath'
 export default {
-  setup() {
+  emits: ['aniHandler'],
+  setup(props, ctx) {
     const showFlag = ref(true)
     const store = useNavPathStore()
-    function maoDianEvent(id) {
+    function maoDianEvent(id, idx) {
       const maoDianEl = document.querySelector(`#${id}`)
       maoDianEl.scrollIntoView()
+      ctx.emit('aniHandler', idx)
+      
     }
     function backTop() {
       document.documentElement.scrollTop = 0

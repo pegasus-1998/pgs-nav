@@ -513,6 +513,12 @@ export default [
                 url: 'https://vuetifyjs.com/zh-Hans/',
                 introduction: 'Vue UI 组件库'
             },
+            {
+                iconPath: require('@/assets/icon/BUI.png'),
+                name: 'BUI',
+                url: 'https://www.easybui.com/',
+                introduction: 'BUI框架官网'
+            }
         ]
     },
     {
@@ -740,6 +746,12 @@ export default [
                 name: 'TXT',
                 url: 'http://www.txttool.com/',
                 introduction: 'TXT文本处理工具'
+            },
+            {
+                iconPath: require('@/assets/icon/TinyPNG.png'),
+                name: 'TinyPNG',
+                url: 'https://tinypng.com/',
+                introduction: '图片压缩'
             }
         ]
     },
@@ -800,6 +812,12 @@ export default [
                 name: '花瓣网',
                 url: 'https://huaban.com/',
                 introduction: '陪你做生活的设计师'
+            },
+            {
+                iconPath: require('@/assets/icon/3gbizhi.png'),
+                name: '3gbizhi',
+                url: 'https://www.3gbizhi.com/',
+                introduction: '高清好看的壁纸图片'
             },
         ]
     },

@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <top-search/>
-    <path-nav />
+    <path-nav @aniHandler='aniHandler'/>
     <div class="control bx-width">
       <div class="control-item">
         <span>图标</span>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <el-card v-for="(item, idx) in store.configPath" :key="idx" :id="item.id" class="box-card bx-width" shadow="never">
-      <div class="pick">{{item.title}}</div>
+      <div ref="pick" class="pick">{{item.title}}</div>
       <div class="cards">
         <card-mes v-for="sItem in item.children" :key="sItem.url" :mes='sItem' :controlFlags='flags' />
       </div>
@@ -29,19 +29,28 @@ import pathNav from './components/pathNav.vue'
 import cardMes from '@/components/cardMes.vue'
 import bottomWeb from '@/components/bottomWeb.vue'
 import { useNavPathStore } from '@/store/modules/navPath'
-import { reactive, toRefs } from 'vue'
+import { reactive, toRefs, ref } from 'vue'
 export default {
   components: { pathNav, topSearch, cardMes, bottomWeb },
   setup() {
+    const pick = ref()
     const flags = reactive({
       iconFlag: true,
       introFlag: true
     })
+    function aniHandler(idx) {
+      const pickEls = pick.value
+      const el = pickEls[idx]
+      pickEls.forEach(item => item.className = 'pick')
+      el.classList.add('animate__animated', 'animate__bounce', 'animate__delay-1s')
+    }
     const store = useNavPathStore()
     return {
+      pick,
       store,
       flags,
-      ...toRefs(flags)
+      ...toRefs(flags),
+      aniHandler
     }
   }
 }
