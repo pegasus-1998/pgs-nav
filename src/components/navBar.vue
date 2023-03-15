@@ -104,6 +104,11 @@ export default {
 
 <style lang='scss' scoped>
 .nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
   background: var(--white-black);
   border-bottom: 2px solid #ccc;
   &-main {
@@ -149,6 +154,7 @@ export default {
 
 <style lang="scss" scoped>
 .version-sp {
+  cursor: pointer;
   color: var(--theme-color);
 }
 .pop-con {

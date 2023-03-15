@@ -8,15 +8,17 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 45px;
+  padding-top: 45px;
   &::-webkit-scrollbar {
     width: 7px;
-    height: 1px;
+    height: 7px;
   }
 
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: #ccc;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(var(--theme-color), #A0BCD8);
   }
     
   &::-webkit-scrollbar-track {
@@ -28,12 +30,15 @@ html {
 
 body {
   font-size: 14px;
+  min-width: 1270px;
+  margin: 0 auto;
+  overflow: auto;
   background: var(--bg-color);
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 input {

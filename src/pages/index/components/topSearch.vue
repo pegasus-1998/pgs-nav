@@ -39,6 +39,11 @@ export default {
         icon: require('@/assets/icon/searchgithub.png')
       },
       {
+        text: '简书',
+        src: 'https://www.jianshu.com/search?q=',
+        icon: require('@/assets/icon/jiansu.png')
+      },
+      {
         text: '掘金',
         src: 'https://juejin.cn/search?query=',
         icon: require('@/assets/icon/juejing.png')

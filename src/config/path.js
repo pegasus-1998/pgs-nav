@@ -282,6 +282,18 @@ export default [
         ]
     },
     {
+        id: 'svelte',
+        title: 'Svelte',
+        children: [
+            {
+                iconPath: require('@/assets/icon/Svelte.png'),
+                name: 'Svelte',
+                url: 'https://www.sveltejs.cn/',
+                introduction: 'Svelte中文文档'
+            },
+        ]
+    },
+    {
         id: 'node',
         title: 'Node.js',
         children: [
@@ -451,7 +463,7 @@ export default [
     },
     {
         id: 'zujianku',
-        title: '组件库',
+        title: 'UI库',
         children: [
             {
                 iconPath: require('@/assets/icon/element.png'),
@@ -518,6 +530,24 @@ export default [
                 name: 'BUI',
                 url: 'https://www.easybui.com/',
                 introduction: 'BUI框架官网'
+            },
+            {
+                iconPath: require('@/assets/icon/Layui.png'),
+                name: 'Layui',
+                url: 'https://www.layui.org.cn/',
+                introduction: '模块化前端 UI 框架'
+            },
+            {
+                iconPath: require('@/assets/icon/bootstrap.png'),
+                name: 'Bootstrap',
+                url: 'https://www.bootcss.com/',
+                introduction: '强悍的前端开发框架'
+            },
+            {
+                iconPath: require('@/assets/icon/TuniaoUI.png'),
+                name: 'TuniaoUI',
+                url: 'https://vue2.tuniaokj.com/',
+                introduction: '基于uni-app进行开发的UI框架'
             }
         ]
     },
@@ -669,6 +699,12 @@ export default [
                 url: 'https://www.pnpm.cn/',
                 introduction: 'pnpm中文文档'
             },
+            {
+                iconPath: require('@/assets/icon/Rspack.png'),
+                name: 'Rspack',
+                url: 'https://www.rspack.dev/zh/',
+                introduction: '基于Rust的高性能Web构建工具'
+            },
         ]
     },
     {
@@ -780,6 +816,30 @@ export default [
         ]
     },
     {
+        id: 'tuozhan',
+        title: '拓展',
+        children: [
+            {
+                iconPath: require('@/assets/icon/baiduamap.png'),
+                name: '百度地图',
+                url: 'https://lbsyun.baidu.com/',
+                introduction: '百度地图开放平台'
+            },
+            {
+                iconPath: require('@/assets/icon/gaodeamap.png'),
+                name: '高德地图',
+                url: 'https://developer.amap.com/',
+                introduction: '高德开放平台'
+            },
+            {
+                iconPath: require('@/assets/icon/weixin.png'),
+                name: '微信公众平台',
+                url: 'https://mp.weixin.qq.com/',
+                introduction: '微信公众平台官方网站'
+            },
+        ]
+    },
+    {
         id: 'sucai',
         title: '素材',
         children: [
@@ -819,6 +879,12 @@ export default [
                 url: 'https://www.3gbizhi.com/',
                 introduction: '高清好看的壁纸图片'
             },
+            {
+                iconPath: require('@/assets/icon/17sucai.png'),
+                name: '17素材',
+                url: 'http://www.17sucai.com/',
+                introduction: '网页特效 网页模板'
+            },
         ]
     },
     {
@@ -837,6 +903,30 @@ export default [
                 url: 'https://www.makeapie.cn/echarts',
                 introduction: 'echarts社区'
             }
+        ]
+    },
+    {
+        id: 'zonghe',
+        title: '综合',
+        children: [
+            {
+                iconPath: require('@/assets/icon/developers.png'),
+                name: '开发者客栈',
+                url: 'https://www.developers.pub/',
+                introduction: '帮助开发者面试的平台'
+            },
+            {
+                iconPath: require('@/assets/icon/yuchengkai.png'),
+                name: '前端进阶之道',
+                url: 'https://yuchengkai.cn/',
+                introduction: '前端进阶资料'
+            },
+            {
+                iconPath: require('@/assets/icon/ecool.png'),
+                name: '前端面试宝典',
+                url: 'https://fe.ecool.fun/',
+                introduction: '专业的前端面试题库'
+            },
         ]
     },
     {

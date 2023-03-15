@@ -4,9 +4,7 @@
       <span class="t-text">友情链接:</span>
       <ul class="link-container">
         <li class="link-item">
-          <span class="vert"></span>
           <a href="https://vue.miaya.art/zh-cn" target="blank" class="nav-link">Fext UI</a>
-          <span class="vert"></span>
         </li>
       </ul>
       <div class="mes">
@@ -29,21 +27,24 @@ export default {
   background: #313131;
   .cen-container {
     .link-container {
-      @include flexWrapGap(30px);
+      @include flexWrapGap(25px);
       padding-left: 70px;
       .link-item {
         @include flexItem;
         font-size: 12px;
-        .vert {
-          width: 1px;
-          height: 50%;
-          background: #a3a3a3;
-        }
         .nav-link {
           padding: 3px 10px;
           &:hover {
             text-decoration: underline;
           }
+        }
+        &::before,
+        &::after {
+          display: block;
+          content: '';
+          width: 1px;
+          height: 50%;
+          background: #a3a3a3;
         }
       }
     }
