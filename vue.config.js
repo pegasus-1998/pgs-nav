@@ -13,7 +13,7 @@ module.exports = {
     chainWebpack: config => {
         config.plugin('html')
             .tap(args => {
-                args[0].title = "pgs-nav";
+                args[0].title = "天马导航 | 专注于前端的导航网站";
                 return args
             })
     },

@@ -23,6 +23,13 @@ const routes = [
     }
   },
   {
+    path: '/message',
+    component: () => import('@/pages/message'),
+    meta: {
+      title: '留言'
+    }
+  },
+  {
     path: '/about',
     component: () => import('@/pages/about'),
     meta: {
@@ -36,6 +43,6 @@ const router = createRouter({
   routes
 })
 
-router.afterEach(to => document.title = 'pgs-nav | 前端导航 -' + to.meta.title)
+router.afterEach(to => document.title = `天马导航 - ${to.meta.title} | 专注于前端的导航网站`)
 
 export default router

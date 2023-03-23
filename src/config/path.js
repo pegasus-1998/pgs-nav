@@ -609,6 +609,12 @@ export default [
                 url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/',
                 introduction: '微信开放文档'
             },
+            {
+                iconPath: require('@/assets/icon/Donut.png'),
+                name: 'Donut',
+                url: 'https://dev.weixin.qq.com/',
+                introduction: 'All inDonut'
+            },
         ]
     },
     {
@@ -627,6 +633,30 @@ export default [
                 url: 'https://www.electronjs.org/zh/docs/latest/',
                 introduction: '构建桌面应用程序的框架'
             }
+        ]
+    },
+    {
+        id: 'weiqiandaun',
+        title: '微前端',
+        children: [
+            {
+                iconPath: require('@/assets/icon/qiankun.png'),
+                name: 'qiankun',
+                url: 'https://qiankun.umijs.org/',
+                introduction: '完善的微前端解决方案'
+            },
+            {
+                iconPath: require('@/assets/icon/MicroApp.png'),
+                name: 'MicroApp',
+                url: 'https://zeroing.jd.com/micro-app/',
+                introduction: '功能强大的微前端框架'
+            },
+            {
+                iconPath: require('@/assets/icon/wujie.png'),
+                name: '无界',
+                url: 'https://wujie-micro.github.io/doc/',
+                introduction: '极致的微前端框架'
+            },
         ]
     },
     {
@@ -704,6 +734,12 @@ export default [
                 name: 'Rspack',
                 url: 'https://www.rspack.dev/zh/',
                 introduction: '基于Rust的高性能Web构建工具'
+            },
+            {
+                iconPath: require('@/assets/icon/Prettier.png'),
+                name: 'Prettier',
+                url: 'https://www.prettier.cn/',
+                introduction: 'Prettier中文网'
             },
         ]
     },
@@ -788,6 +824,12 @@ export default [
                 name: 'TinyPNG',
                 url: 'https://tinypng.com/',
                 introduction: '图片压缩'
+            },
+            {
+                iconPath: require('@/assets/icon/zzzmh.png'),
+                name: '极简插件',
+                url: 'https://chrome.zzzmh.cn/',
+                introduction: 'Chrome扩展插件'
             }
         ]
     },
